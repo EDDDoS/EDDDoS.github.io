@@ -27,6 +27,9 @@ html{
     height: 700px;
     width: 20%;
     border-right: 1px solid #e7e7e7;
+    position: fixed;
+    left: 0;
+    margin-left: 70px;
 }
 
 .social_structure .social_structure__left_container .social_structure_left_logo{
@@ -119,6 +122,8 @@ html{
     background: rgb(255, 255, 255);
     height: 700px;
     width: 45%;
+    margin-left: auto;
+    margin-right: 405px;
 }
 
 .social_structure .social_structure_center_container header{
@@ -213,7 +218,8 @@ html{
     width: 30%;
     border-left: 1px solid #e7e7e7;
     padding: 30px;
-    
+    position: fixed;
+    right: 0;
 }
 
 .social_structure .social_structure_right_container .social_structure_right_container_buscar{
@@ -364,7 +370,17 @@ html{
     border-bottom: 1px solid #e7e7e7;
 }
 
+@media (max-width: 1280px){
+    .social_structure .social_structure_center_container{
+        margin-right: 390px;
+    }
+}
+
 @media (max-width: 1200px){
+    .social_structure .social_structure_center_container{
+        margin-right: auto;
+    }
+
     .social_structure .social_structure__left_container{
         width: 20%;
     }
@@ -395,6 +411,14 @@ html{
 }
 
 @media (max-width: 1000px){
+    .social_structure .social_structure_center_container{
+        margin-right: 0;
+    }
+
+    .social_structure .social_structure__left_container{
+        margin-left: 0px;
+    }
+
     .social_structure_right_container{
         display: none;
     }
