@@ -18,18 +18,20 @@ html{
 .social_structure{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:stretch;
     justify-content: center;
 }
 
 .social_structure .social_structure__left_container{
     background: rgb(255, 255, 255);
-    height: 700px;
     width: 20%;
-    border-right: 1px solid #e7e7e7;
+    height: 100%;
+    margin-bottom: auto;
     position: fixed;
+    top: 0;
     left: 0;
-    margin-left: 70px;
+    margin-left: 4pc;
+    overflow: auto;
 }
 
 .social_structure .social_structure__left_container .social_structure_left_logo{
@@ -120,10 +122,11 @@ html{
 
 .social_structure .social_structure_center_container{
     background: rgb(255, 255, 255);
-    height: 700px;
+    height: 100%;
     width: 45%;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
     margin-left: auto;
-    margin-right: 405px;
 }
 
 .social_structure .social_structure_center_container header{
@@ -155,7 +158,7 @@ html{
 .social_structure .social_structure_center_container header .comentario .comentario__contenedor .comentario__perfil img{
     width: 100%;
     border-radius: 100%;
-    border: 2px solid #e2e2e2;
+    /* border: 2px solid #e2e2e2; */
 }
 
 .social_structure .social_structure_center_container header .comentario .comentario__contenedor .comentario__comentario{
@@ -214,12 +217,11 @@ html{
 
 .social_structure .social_structure_right_container{
     background: rgb(255, 255, 255);
-    height: 700px;
+    height: 100%;
     width: 30%;
-    border-left: 1px solid #e7e7e7;
     padding: 30px;
-    position: fixed;
-    right: 0;
+    position: sticky;
+    top: 20px;
 }
 
 .social_structure .social_structure_right_container .social_structure_right_container_buscar{
@@ -297,7 +299,7 @@ html{
 .publicaciones .publicaciones_publicaciones .publicaciones__user_profile img{
     width: 100%;
     border-radius: 100%;
-    border: 2px solid #b6c9cc;
+    /* border: 2px solid #b6c9cc; */
 }
 
 .publicaciones .publicaciones_publicaciones .publicaciones__contenido{
@@ -370,17 +372,7 @@ html{
     border-bottom: 1px solid #e7e7e7;
 }
 
-@media (max-width: 1280px){
-    .social_structure .social_structure_center_container{
-        margin-right: 390px;
-    }
-}
-
 @media (max-width: 1200px){
-    .social_structure .social_structure_center_container{
-        margin-right: auto;
-    }
-
     .social_structure .social_structure__left_container{
         width: 20%;
     }
@@ -411,12 +403,8 @@ html{
 }
 
 @media (max-width: 1000px){
-    .social_structure .social_structure_center_container{
-        margin-right: 0;
-    }
-
     .social_structure .social_structure__left_container{
-        margin-left: 0px;
+        margin-left: 5px;
     }
 
     .social_structure_right_container{
